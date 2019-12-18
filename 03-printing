@@ -1,0 +1,7 @@
+#!/bin/bash
+echo Hello
+echo How are you?
+
+echo -e "Hello\nHow are you?"
+
+echo -e "\e[32mHello\n\e[33mHow are you?\n\e[0m"
