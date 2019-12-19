@@ -1,0 +1,22 @@
+#!/bin/bash
+A=Kanda
+B=Priya
+C=10
+echo "Your name is $A"
+
+echo ${C}Apples
+
+DATE=2019-09-24
+echo "Today date is $DATE"
+
+DATE=$(date +%F) 
+LIST=$(ls -la)
+
+echo "Today date is $DATE"
+
+echo "Listing the file $LIST"
+
+
+echo $A
+
+echo $Z
