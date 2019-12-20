@@ -1,0 +1,54 @@
+#!/bin/bash
+## Exit status example
+
+expr 50 + 50 
+echo $?
+
+rm /tmp/kdna
+echo $?
+
+expr 150 + 150
+echo $?
+
+expr 60 + gg
+echo $?
+
+###### Successful Exit status
+
+cat file.txt
+echo hello world 
+echo $?
+
+###### error exit code
+
+cat doesnotexit.txt
+echo $?
+
+###### How to use exit code in Scripts
+
+cat file.txt
+if [ $? eq 0 ]
+then 
+  echo " The script ran ok"
+  exit 0
+else
+   echo " The scripts failed"
+exit 1
+fi
+
+### How to set an exit code?
+
+exit 1
+
+
+###What exit code should I use?
+### The Linux Documentation Project has a list of reserved codes that also offers advice on what code to use for specific scenarios. These are the standard error codes in Linux or UNIX.
+
+### 1 - Catchall for general errors
+### 2 - Misuse of shell builtins (according to Bash documentation)
+### 126 - Command invoked cannot execute
+### 127 - “command not found”
+### 128 - Invalid argument to exit
+### 128+n - Fatal error signal “n”
+### 130 - Script terminated by Control-C
+### 255\* - Exit status out of range
