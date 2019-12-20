@@ -15,3 +15,26 @@ echo -e "\e[32mHello\n\e[33mHow are you?\n\e[0m"
 # Magenta         35                      45
 # Cyan            36                      46
 
+echo -e "\e[31mHello World\e[0m"
+
+echo -e "\e[31mHello\e[0m World"
+
+echo -e "\e[34mWelcome to all\n\e[36mHow is life going on?\e[0m"
+
+echo -e "\x1B[34mHello\e[0m world"
+
+echo -e "\x1B[34mHello\e[0m world"
+
+echo -e "Hello \e[1mBold"
+
+echo -e "Hello \e[5mBlink\e[0m"
+
+echo -e "Hello \e[4mKandasamyMurugan\e[0m"
+
+echo -e "Hello \e[8mHidden\e[0m"
+
+echo -e "\e[40;38;5;82m Hello \e[30;48;5;82m World \e[0m"
+
+for i in {16..21} {21..16} ; do echo -en "\e[48;5;${i}m \e[0m" ; done ; echo
+
+

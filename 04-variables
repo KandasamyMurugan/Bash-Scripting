@@ -20,3 +20,12 @@ echo "Listing the file $LIST"
 echo $A
 
 echo $Z
+
+MY_MESSAGE="Hello World"
+
+##Example1
+
+
+read -p 'Enter your name: ' MY_NAME
+echo "Hello $MY_NAME -- hope you are doing well..."
+
