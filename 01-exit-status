@@ -1,0 +1,19 @@
+#!/bin/bash
+## Evaluate an arithmetic expression
+
+expr 15 + 23
+echo $?
+
+rm -r /tmp/kanda.txt
+echo $?
+
+expr 14 + kanda
+echo $?
+
+expr 50 + 50 
+
+echo $?
+
+ls /tmp/kandasamyfolder
+
+echo $?

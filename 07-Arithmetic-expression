@@ -1,0 +1,16 @@
+#!/bin/bash
+
+### Add two numbers
+
+expr 5 + 10
+
+### Adding two numbers and multiply with third
+
+expr 5 + 10 \* 4
+
+
+### Adding two numbers, Grouped and multiply with third
+
+expr \( 5 + 10 \) \* 4
+
+

@@ -52,3 +52,6 @@ exit 1
 ### 128+n - Fatal error signal “n”
 ### 130 - Script terminated by Control-C
 ### 255\* - Exit status out of range
+
+
+cat 'doesnotexist.txt' 2>/dev/null || exit 0
