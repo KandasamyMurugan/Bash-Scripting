@@ -13,3 +13,7 @@ systemctl start httpd
 systemctl enable httpd
 
 curl -s https://s3-us-west-2.amazonaws.com/studentapi-cit/index.html -o /var/www/html/index.html
+
+echo 'ProxyPass "/student" "http://localhost:8080/student"
+ProxyPassReverse "/student"  "http://localhost:8080/student"' >/etc/httpd/conf.d/app-proxy.conf  
+
