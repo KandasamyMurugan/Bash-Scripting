@@ -1,12 +1,14 @@
 #!/bin/bash
 
+
+#################### How to Check folder already exits or not #####################################################
+
 if [ -d /tmp/kanda ]; then
 
-echo "Folder already exists"
+echo -e "\e[31m\e[5mFOLDER ALREADY EXISTS\e[0m"
 
 else
 
 mkdir /tmp/kanda
 
-  # Control will enter here if $DIRECTORY exists.
 fi
