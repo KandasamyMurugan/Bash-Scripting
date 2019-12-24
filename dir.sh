@@ -3,12 +3,22 @@
 
 #################### How to Check folder already exits or not #####################################################
 
-if [ -d /tmp/kanda ]; then
+read -p "Enter user id: " userid
 
-echo -e "\e[31m\e[5mFOLDER ALREADY EXISTS\e[0m"
+if [ -d /tmp/$userid ]; then
+
+echo -e "\e[31mFOLDER ALREADY EXISTS\e[0m" 2&>/dev/null
+
+chown -R $userid:root /tmp/$userid
 
 else
 
-mkdir /tmp/kanda
+mkdir /tmp/$userid
+
+useradd $userid
+
+chown -R $userid:root /tmp/$userid
 
 fi
+
+

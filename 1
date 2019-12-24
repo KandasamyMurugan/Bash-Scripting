@@ -1,0 +1,18 @@
+#!/bin/bash
+
+
+#################### How to Check folder already exits or not #####################################################
+read -p "Enter user id: " userid
+
+if [ -d imp/kanda ]; then
+
+echo -e "\e[31mFOLDER ALREADY EXISTS\e[0m"
+
+else
+
+mkdir /tmp/kanda
+chown -R kanda:root kanda
+
+fi
+
+
