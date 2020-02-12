@@ -1,2 +1,2 @@
 #!/bin/bash
-echo "Hello World from SCM, Have good day !!! ...."
+echo "Hello World from SCM, Have good day !!!! ...."
