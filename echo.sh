@@ -1,2 +1,2 @@
 #!/bin/bash
-echo "Hello World from SCM new...."
+echo "Hello World from SCM new 1...."
